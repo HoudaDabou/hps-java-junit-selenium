@@ -43,7 +43,7 @@ public class SeleniumDriverGetter {
         if (System.getenv("USE_HEADLESS_CHROME") != null) {
           String chromePath = System.getenv("CHROME_PATH");
           if (chromePath == null) {
-            chromePath = "/usr/bin/google-chrome-stable";
+            chromePath = "/usr/bin/google-chrome";
           }
 
           final ChromeOptions chromeOptions = new ChromeOptions();
