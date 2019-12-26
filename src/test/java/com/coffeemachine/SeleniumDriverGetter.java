@@ -50,7 +50,8 @@ public class SeleniumDriverGetter {
           chromeOptions.setBinary(chromePath);
           chromeOptions.addArguments("--headless");
           chromeOptions.addArguments("--disable-gpu");
-          // chromeOptions.addArguments("--no-sandbox");
+          chromeOptions.addArguments("--no-sandbox");
+          chromeOptions.addArguments("--disable-dev-shm-usage")
 
           caps.setJavascriptEnabled(true);
           caps.setCapability(
