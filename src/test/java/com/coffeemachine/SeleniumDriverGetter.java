@@ -52,6 +52,7 @@ public class SeleniumDriverGetter {
           chromeOptions.addArguments("--headless");
           chromeOptions.addArguments("--disable-gpu");
           chromeOptions.addArguments("--disable-dev-shm-usage");
+          chromeOptions.addArguments("--remote-debugging-port=9222");
 
           caps.setJavascriptEnabled(true);
           caps.setCapability(
