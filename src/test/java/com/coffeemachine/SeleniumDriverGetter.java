@@ -47,7 +47,7 @@ public class SeleniumDriverGetter {
           }
 
           final ChromeOptions chromeOptions = new ChromeOptions();
-          chromeOptions.setBinary(chromePath);
+          chromeOptions.setBinary("/usr/bin/google-chrome-stable");
           chromeOptions.addArguments("--no-sandbox");
           chromeOptions.addArguments("--headless");
           chromeOptions.addArguments("--disable-gpu");
