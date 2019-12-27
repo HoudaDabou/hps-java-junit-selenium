@@ -61,7 +61,10 @@ public class SeleniumDriverGetter {
           );
         }
 
-        return new ChromeDriver(caps);
+        // return new ChromeDriver(caps);
+        
+        driver = new ChromeDriver(caps);
+        return driver.get("https://google.com");
     }
 
     private WebDriver getRemoteDriver(DesiredCapabilities caps) throws Exception {
